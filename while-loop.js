@@ -1,8 +1,8 @@
-let arr = [1,2,3,4,5];
+let arr123 = [1,2,3,4,5];
 
 class Test {
     getBigger() {
-        arr = this.arr;
+        let arr = this.arr;
         let elem;
         while (elem !== 5) {
             arr.forEach((element) => {
@@ -14,5 +14,5 @@ class Test {
 }
 
 test = new Test;
-test.arr = arr;
+test.arr = arr123;
 test.getBigger();
